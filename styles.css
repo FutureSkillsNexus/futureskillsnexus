@@ -200,70 +200,57 @@ nav ul li a:hover {
 }
 
 /* Contact Section */
-.contact {
-    background: #1a0d2b;
-}
-
-.contact form {
-    display: flex;
-    flex-direction: column;
-    max-width: 500px;
-    margin: 0 auto 30px;
-}
-
-.contact input, .contact textarea {
-    padding: 10px;
-    margin: 10px 0;
-    border: none;
-    border-radius: 5px;
-    background: rgba(255, 255, 255, 0.1);
-    color: #ffffff;
-}
-
-.contact button {
-    padding: 10px;
-    background: #ff00ff;
-    color: #ffffff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background 0.3s;
-}
-
-.contact button:hover {
-    background: #00f0ff;
-}
-
-.contact #mc-embedded-subscribe-form {
-    display: flex;
-    gap: 10px;
+#contact .newsletter #mc_embed_signup {
+    background-color: #1a0d2b;
+    padding: 20px;
+    border: 2px solid #ff00ff;
+    border-radius: 10px;
     max-width: 500px;
     margin: 0 auto;
+    box-shadow: 0 0 15px rgba(255, 0, 255, 0.5);
+    background-image: url('hex-pattern.png');
+    background-repeat: repeat;
 }
-
-.contact #mc-embedded-subscribe-form input[type="email"] {
-    flex: 1;
+#contact .newsletter #mc_embed_signup input[type="email"],
+#contact .newsletter #mc_embed_signup input[type="text"] {
+    background-color: #2b1a3d;
+    color: #00f0ff;
+    border: 2px solid #ff00ff;
     padding: 10px;
+    width: 100%;
     border-radius: 5px;
-    border: none;
-    background: rgba(255, 255, 255, 0.1);
-    color: #ffffff;
+    margin-bottom: 10px;
 }
-
-.contact #mc-embedded-subscribe-form input[type="submit"] {
-    padding: 10px 20px;
-    background: #ff00ff;
-    color: #ffffff;
+#contact .newsletter #mc_embed_signup .button {
+    background-color: #ff00ff;
+    color: white;
     border: none;
+    padding: 12px 20px;
     border-radius: 5px;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 16px;
     cursor: pointer;
-    transition: background 0.3s;
+    transition: transform 0.3s;
 }
-
-.contact #mc-embedded-subscribe-form input[type="submit"]:hover {
-    background: #00f0ff;
+#contact .newsletter #mc_embed_signup .button:hover {
+    transform: scale(1.05);
 }
-
+#contact .newsletter #mc_embed_signup label {
+    color: #00f0ff;
+    font-family: 'Rajdhani', sans-serif;
+}
+#contact .newsletter .asterisk {
+    color: #ff00ff;
+}
+#contact .newsletter #mce-responses .response {
+    margin-top: 10px;
+}
+#contact .newsletter #mce-error-response {
+    color: #ff0000;
+}
+#contact .newsletter #mce-success-response {
+    color: #00ff00;
+}
 /* X Posts Section */
 .x-posts {
     background: #2b1a3b;
